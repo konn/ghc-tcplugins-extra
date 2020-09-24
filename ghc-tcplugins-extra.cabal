@@ -32,11 +32,10 @@ flag deverror
 
 library
   exposed-modules:     GHC.TcPluginM.Extra
-  build-depends:       base >=4.8  && <5
+  build-depends:       base >=4.8  && <5,
+                       ghc  >=7.10 && <8.12
   if impl(ghcjs >= 8.2)
                        ghc-api-ghcjs  >=8.2 && <8.12
-  else
-                       ghc  >=7.10 && <8.12
   hs-source-dirs:      src
   default-language:    Haskell2010
   other-extensions:    CPP

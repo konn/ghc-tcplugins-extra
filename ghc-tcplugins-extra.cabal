@@ -32,7 +32,7 @@ flag deverror
 
 library
   exposed-modules:     GHC.TcPluginM.Extra
-  build-depends:       base >=4.8  && <5,
+  build-depends:       base >=4.8  && <5
   if impl(ghcjs >= 8.2)
                        ghc-api-ghcjs  >=8.2 && <8.12
   else
